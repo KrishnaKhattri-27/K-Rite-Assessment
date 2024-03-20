@@ -4,7 +4,7 @@ import { CgAddR } from "react-icons/cg";
 
 const Teams = () => {
   return (
-    <div className="border-[1px] border-[#c2c3c6] bg-white w-full rounded-2xl pt-2 ">
+    <div className="border-[1px] border-[#c2c3c6] bg-white w-full rounded-2xl pt-2 shadow-lg">
       {TeamData?.map((e) => (
         <div
           key={TeamData.indexOf(e)}
@@ -22,7 +22,7 @@ const Teams = () => {
         </div>
       ))}
       <div className="flex gap-x-2 items-center py-2 cursor-pointer px-2 mx-2 border-t-[1px] border-[#c2c3c6]  text-[#a4a4a7]">
-        <CgAddR />
+        <CgAddR size={21}/>
         <h1 className="text-base tracking-tight font-menagrotesk-semi">
           Create a team
         </h1>

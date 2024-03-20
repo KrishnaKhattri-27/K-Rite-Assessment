@@ -3,10 +3,11 @@ import face from "../../assets/img2.jpg"
 import Teams from './Teams'
 import hub from "../../assets/hub.webp"
 import TreeDropDown from '../dropdown/TreeDropDown'
+import Folders from './Folders'
 
 const SideBar = () => {
   return (
-    <div className='rounded-2xl border-[1px] border-black w-[25%] h-full py-4 px-2'>
+    <div className='rounded-2xl border-[1px] border-black w-[25%] h-full py-4 px-2 overflow-y-auto'>
       <div className='flex justify-between items-center mb-2 px-4'>
         <div className='flex gap-x-2 items-center'>
             <img src={hub} className='w-8 h-8 rounded-lg' alt="" />
@@ -18,7 +19,7 @@ const SideBar = () => {
              <img src={face} alt="" className='rounded-full w-8 h-8' />
       </div>
       <Teams/>
-      <TreeDropDown/>
+      <Folders/>
     </div>
   )
 }

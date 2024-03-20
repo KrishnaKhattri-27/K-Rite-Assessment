@@ -89,7 +89,7 @@ const TableContent = ({ checkBoxHandler, Data }) => {
             style={{ textOverflow: "ellipsis" }}
           >
             {e.tags.map((f) => (
-              <div className="text-xs p-1 font-menagrotesk rounded-lg border-2 bg-[#a4a4a7]">
+              <div className="text-xs p-1 font-menagrotesk rounded-lg border-2 bg-[#d3d3d4]">
                 {f}
               </div>
             ))}

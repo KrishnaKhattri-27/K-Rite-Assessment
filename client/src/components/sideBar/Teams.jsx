@@ -8,7 +8,7 @@ const Teams = () => {
       {TeamData?.map((e) => (
         <div
           key={TeamData.indexOf(e)}
-          className="flex justify-between items-center py-2 mx-2 rounded-xl cursor-pointer px-2 hover:bg-[#a4a4a7]"
+          className="flex justify-between items-center py-2 mx-2 rounded-xl cursor-pointer px-2 hover:bg-[#d3d3d4]"
         >
           <div className="flex items-center gap-x-2">
             {e.logo}

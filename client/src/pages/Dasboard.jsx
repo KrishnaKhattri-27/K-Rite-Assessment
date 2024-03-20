@@ -11,7 +11,7 @@ const Dasboard = () => {
     else setCounter(counter - 1);
   };
   return (
-    <div className='relative flex gap-x-4 p-5 w-screen h-screen'>
+    <div className='relative bg-[#d3d3d4] flex gap-x-4 p-5 w-screen h-screen'>
       <SideBar/>
       <MainSection checkBoxHandler={checkBoxHandler} counter={counter}/>
       <BottomMenu counter={counter}/>

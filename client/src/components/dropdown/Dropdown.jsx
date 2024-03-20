@@ -12,7 +12,7 @@ const Dropdown = ({ name, options }) => {
       <button
         id={name + "dropdownDefaultButton"}
         onClick={toggleDropdown}
-        className="text-black bg-white hover:bg-[#a4a4a7] focus:outline-none font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center font-menagrotesk-semi  border-[1px] border-[#a4a4a7] shadow-lg"
+        className="text-black bg-white hover:bg-[#d3d3d4] focus:outline-none font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center font-menagrotesk-semi  border-[1px] border-[#d3d3d4] shadow"
         type="button"
       >
         {name}
@@ -46,7 +46,7 @@ const Dropdown = ({ name, options }) => {
               <li key={index}>
                 <a
                   href="#"
-                  className="block px-4 py-2 hover:bg-[#a4a4a7] rounded-lg font-menagrotesk"
+                  className="block px-4 py-2  rounded-lg font-menagrotesk"
                   onClick={()=>setIsOpen(false)}
                 >
                   {e}

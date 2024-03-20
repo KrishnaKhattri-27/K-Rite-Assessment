@@ -50,7 +50,7 @@ const MainSection = ({ checkBoxHandler, counter }) => {
     "Next Meeting",
   ];
   return (
-    <main className=" rounded-2xl border-[1px] border-black w-[75%] h-full  bg-[#e9e8e8] overflow-y-scroll">
+    <main className=" rounded-2xl shadow-xl border-black w-[75%] h-full  bg-white overflow-y-scroll">
       <Navbar handleSearch={handleSearch} query={query} />
       <Filters sortHandler={sortHandler}/>
       <Table1

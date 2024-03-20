@@ -42,6 +42,41 @@ const TableContent = ({ checkBoxHandler, Data }) => {
     }
     return temp;
   };
+
+  const backgroundSelector1 = (f) => {
+    let temp = {
+      backgroundColor: "",
+      color: "",
+      borderColor: "",
+      whiteSpace: "nowrap",
+    };
+    switch (f) {
+      case "No contact":
+        temp.backgroundColor = "#ff00001c";
+        temp.color = "red";
+        temp.borderColor = "red";
+        break;
+
+      case "Tomorrow":
+        temp.backgroundColor = "#0000ff1c";
+        temp.color = "blue";
+        temp.borderColor = "blue";
+        break;
+
+      case "Next month":
+        temp.backgroundColor = "#0000001c";
+        temp.color = "black";
+        temp.borderColor = "black";
+        break;
+
+      default:
+        temp.backgroundColor = "#0080001c";
+        temp.color = "green";
+        temp.borderColor = "green";
+        break;
+    }
+    return temp;
+  };
   return (
     <tbody>
       {Data?.map((e) => (
@@ -95,7 +130,12 @@ const TableContent = ({ checkBoxHandler, Data }) => {
             ))}
           </td>
           <td className="p-2 font-menagrotesk">
-            <span>{e.tags}</span>
+            <div
+              className="text-sm p-1 font-menagrotesk-semi rounded-xl border-2 max-w-fit "
+              style={{ ...backgroundSelector1(e.meeting) }}
+            >
+              {e.meeting}
+            </div>
           </td>
         </tr>
       ))}

@@ -72,9 +72,9 @@ const Table1 = ({ headers, minCellWidth,checkBoxHandler,Data }) => {
   }, [activeIndex, mouseMove, mouseUp, removeListeners]);
 
   return (
-    <div className="container">
-      <div className="table-wrapper">
-        <table className="resizeable-table" ref={tableElement}>
+    <div className=" w-full">
+      <div className="table-wrapper w-full">
+        <table className="resizeable-table w-full" ref={tableElement}>
           <thead>
             <tr>
               {columns.map((e, i) => (

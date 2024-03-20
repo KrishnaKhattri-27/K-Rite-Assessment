@@ -8,8 +8,8 @@ import { CgAddR } from "react-icons/cg";
 const Filters = ({sortHandler}) => {
   const options = ["dasho", "kdjcka", "askjb"];
   return (
-    <div className="flex justify-between items-center border-b-[1px] border-[#a4a4a7] px-5 py-3">
-      <div className="flex gap-x-4 items-center">
+    <div className="flex flex-wrap gap-y-2 justify-between items-center border-b-[1px] border-[#a4a4a7] px-5 py-3">
+      <div className="flex gap-x-4 gap-y-2 items-center flex-wrap">
         <Dropdown name={"All Brands"} options={options} />
         <Dropdown name={"Desk"} options={options} />
         <Dropdown name={"Tags"} options={options} />

@@ -8,7 +8,7 @@ import SidebarFooter from "./SidebarFooter";
 
 const SideBar = () => {
   return (
-    <div className="rounded-2xl bg-white shadow-xl  w-[25%] h-full py-4 px-2 overflow-y-auto flex flex-col justify-between ">
+    <div className="rounded-2xl bg-white shadow-xl w-full lg:w-[25%] h-full py-4 px-2 overflow-y-auto flex flex-col gap-y-6 justify-between sidebar">
       <div>
         <div className="flex justify-between items-center mb-2 px-4">
           <div className="flex gap-x-2 items-center">

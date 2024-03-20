@@ -4,7 +4,7 @@ import { CgAddR } from "react-icons/cg";
 
 const Teams = () => {
   return (
-    <div className="border-[1px] border-[#c2c3c6] bg-white w-full rounded-2xl pt-2">
+    <div className="border-[1px] border-[#c2c3c6] bg-white w-full rounded-2xl pt-2 ">
       {TeamData?.map((e) => (
         <div
           key={TeamData.indexOf(e)}

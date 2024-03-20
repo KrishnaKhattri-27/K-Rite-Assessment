@@ -4,7 +4,7 @@ import { IoSettings } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 
 
-const Navbar = () => {
+const Navbar = ({handleSearch,query}) => {
   return (
     <nav className="flex justify-between items-center border-b-[1px] border-[#a4a4a7] px-4 py-3">
     <h1 className=" tracking-tighter text-lg font-menagrotesk-semi">
@@ -43,6 +43,9 @@ const Navbar = () => {
             id="default-search"
             class="block w-full p-2.5 pl-9 pt-3 text-base text-[#a4a4a7] border border-[#a4a4a7] rounded-lg bg-white font-menagrotesk-semi"
             placeholder="Search for.."
+            value={query}
+            onChange={handleSearch}
+
             required
           />
 

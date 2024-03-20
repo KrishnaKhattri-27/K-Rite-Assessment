@@ -5,7 +5,7 @@ import { IoFilterSharp } from "react-icons/io5";
 import { MdOutlineImportantDevices } from "react-icons/md";
 import { CgAddR } from "react-icons/cg";
 
-const Filters = () => {
+const Filters = ({sortHandler}) => {
   const options = ["dasho", "kdjcka", "askjb"];
   return (
     <div className="flex justify-between items-center border-b-[1px] border-[#a4a4a7] px-5 py-3">
@@ -13,7 +13,7 @@ const Filters = () => {
         <Dropdown name={"All Brands"} options={options} />
         <Dropdown name={"Desk"} options={options} />
         <Dropdown name={"Tags"} options={options} />
-        <div className="font-menagrotesk-semi bg-white font-medium rounded-xl text-sm px-3 py-2 text-center hover:bg-[#a4a4a7] flex gap-x-2 items-center  cursor-pointer text-[#a4a4a7]">
+        <div className="font-menagrotesk-semi bg-white font-medium rounded-xl text-sm px-3 py-2 text-center hover:bg-[#a4a4a7] flex gap-x-2 items-center  cursor-pointer text-[#a4a4a7]" onClick={sortHandler}>
           <FaSortAlphaDown />
           <h1>Sort</h1>
         </div>

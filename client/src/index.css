@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="checkbox"] {
+  accent-color: black;
+}
+
+@font-face {
+  font-family: "menagrotesk";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "menagrotesk-bold";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "menagrotesk-ultra";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-UltraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "menagrotesk-itallic";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-UltraBold-Italic.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "menagrotesk-light";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "menagrotesk-semi";
+  src: local("Mena-Grotesk"),
+    url("./fonts/MenaGrotesk/Mena-Grotesk-SemiBold.otf") format("opentype");
+}
+
+.font-menagrotesk {
+  font-family: "menagrotesk";
+}
+.font-menagrotesk-semi {
+  font-family: "menagrotesk-semi";
+}
+.font-menagrotesk-light {
+  font-family: "menagrotesk-light";
+}
+.font-menagrotesk-itallic {
+  font-family: "menagrotesk-itallic";
+}
+
+.font-menagrotesk-bold {
+  font-family: "menagrotesk-bold";
+}
+.font-menagrotesk-ultra {
+  font-family: "menagrotesk-ultra";
+}

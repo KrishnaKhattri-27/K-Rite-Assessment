@@ -101,7 +101,7 @@ const TableContent = ({ checkBoxHandler, Data }) => {
             <span>{e.description}</span>
           </td>
           <td className="p-2 font-menagrotesk">
-            <span>{e.members}</span>
+            <span><img src={e.members} className="w-44 h-7 pointer-events-none" alt="" /></span>
           </td>
           <td className="p-2 font-menagrotesk">
             <div

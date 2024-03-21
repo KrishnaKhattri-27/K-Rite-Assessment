@@ -3,9 +3,9 @@ import Dasboard from "./pages/Dasboard";
 
 function App() {
   return (
-<div>
-  <Dasboard/>
-</div>
+    <div>
+      <Dasboard />
+    </div>
   );
 }
 

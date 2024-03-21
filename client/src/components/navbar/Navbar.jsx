@@ -9,6 +9,7 @@ const Navbar = ({ handleSearch, query }) => {
   const [screenSize, setScreenSize] = useState(false);
   const [showmenu, setShowmenu] = useState(false);
 
+  //   Function to check the screen width,(so as we can enable hamsburger menu)
   const changedisplay = () => {
     if (window.innerWidth < 1024) setScreenSize(true);
     else {
@@ -30,29 +31,31 @@ const Navbar = ({ handleSearch, query }) => {
   useEffect(() => {
     changedisplay();
   }, []);
+
   return (
     <nav className="flex  relative overflow-y-visible justify-between items-center border-b-[1px] border-[#a4a4a7] px-4 py-3 z-[1700]">
+
       <div className="flex gap-x-2 sm:gap-x-4">
+       {/* Hamburger Menu Icon */}
         <div
           className={` lg:hidden cursor-pointer z-[5000] flex flex-col justify-center items-end ${
             showmenu ? "change" : ""
           }  h-6 w-6 mt-21`}
           onClick={hamsburgerhandler}
         >
-          <i
-            className={`block w-full bg-black h-1 linex  line1 mb-1`}
-          ></i>
+          <i className={`block w-full bg-black h-1 linex  line1 mb-1`}></i>
           <i className={`block w-full linex h-1 bg-black line2 mb-1`}></i>
-          <i
-            className={`block linex w-full bg-black h-1 line3`}
-          ></i>
+          <i className={`block linex w-full bg-black h-1 line3`}></i>
         </div>
+
+          {/* Heading */}
         <h1 className=" tracking-tighter text-lg font-menagrotesk-semi">
           Products
         </h1>
       </div>
 
       <div className="flex items-center gap-x-4">
+        {/* Seacrch Bar */}
         <div class="w-[150px] sm:w-[250px] shadow-lg">
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center pl-3 pointer-events-none">
@@ -69,6 +72,8 @@ const Navbar = ({ handleSearch, query }) => {
             />
           </div>
         </div>
+
+        {/* Setting and Message icon */}
         <div className="p-2 hidden sm:block bg-white rounded-xl shadow-lg hover:bg-[#d3d3d4]cursor-pointer">
           <TiMessages size={21} />
         </div>
@@ -76,9 +81,12 @@ const Navbar = ({ handleSearch, query }) => {
           <IoSettings size={21} />
         </div>
       </div>
+
+      {/* Absolute Hamburger menu rendering on required screen width */}
       {screenSize ? (
         <Hamburger showmenu={showmenu} handleClick={handleClick} />
       ) : null}
+      
     </nav>
   );
 };

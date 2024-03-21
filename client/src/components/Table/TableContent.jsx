@@ -2,7 +2,9 @@ import React from "react";
 import { FaPlus } from "react-icons/fa6";
 
 const TableContent = ({ checkBoxHandler, Data }) => {
-  const backgroundSelector = (f) => {
+ 
+   //function for setting background color for categories tags
+    const backgroundSelector = (f) => {
     let temp = {
       backgroundColor: "",
       color: "",
@@ -43,6 +45,7 @@ const TableContent = ({ checkBoxHandler, Data }) => {
     return temp;
   };
 
+  //function for setting background color for meetings tags
   const backgroundSelector1 = (f) => {
     let temp = {
       backgroundColor: "",
@@ -77,8 +80,11 @@ const TableContent = ({ checkBoxHandler, Data }) => {
     }
     return temp;
   };
+
+
   return (
     <tbody>
+        {/* Maping the data recieved to generate all entries in row*/}
       {Data?.map((e) => (
         <tr key={Data.indexOf(e)} className="">
           <td className="p-2 font-menagrotesk-semi">
@@ -101,7 +107,13 @@ const TableContent = ({ checkBoxHandler, Data }) => {
             <span>{e.description}</span>
           </td>
           <td className="p-2 font-menagrotesk">
-            <span><img src={e.members} className="w-44 h-7 pointer-events-none" alt="" /></span>
+            <span>
+              <img
+                src={e.members}
+                className="w-44 h-7 pointer-events-none"
+                alt=""
+              />
+            </span>
           </td>
           <td className="p-2 font-menagrotesk">
             <div
@@ -139,6 +151,8 @@ const TableContent = ({ checkBoxHandler, Data }) => {
           </td>
         </tr>
       ))}
+
+      {/* Last Row for the table */}
       <tr className="text-[#a4a4a7]">
         <td className="p-2 font-menagrotesk-semi text-base text-end">
           <span>{Data?.length} count</span>

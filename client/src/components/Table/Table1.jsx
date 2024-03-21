@@ -5,22 +5,19 @@ import { FaPlus } from "react-icons/fa6";
 import TableData from "./data/TableData";
 
 const createHeaders = (headers) => {
+
   return headers.map((item) => ({
     text: item,
     ref: useRef(),
   }));
 };
 
-/*
- * Read the blog post here:
- * https://letsbuildui.dev/articles/resizable-tables-with-react-and-css-grid
- */
 const Table1 = ({ headers, minCellWidth,checkBoxHandler,Data }) => {
+
   const [tableHeight, setTableHeight] = useState("auto");
   const [activeIndex, setActiveIndex] = useState(null);
   const tableElement = useRef(null);
   const columns = createHeaders(headers);
-  console.log(columns);
 
   useEffect(() => {
     setTableHeight(tableElement.current.offsetHeight);

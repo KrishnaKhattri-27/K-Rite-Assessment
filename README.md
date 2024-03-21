@@ -1,6 +1,5 @@
 # K-Rite-Assessment
 
-About Project-
 •	Functionality: 
 1.	User Friendly & Responsive.
 2.	Users can Search/Sort by Brand.
